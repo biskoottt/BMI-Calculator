@@ -1,0 +1,12 @@
+lb_weight = float(input("Enter Weight in Pounds: "))
+in_height = float(input("Enter Height in inches: "))
+
+BMI_imperial = (lb_weight / in_height**2) * 703
+
+kg_weight = lb_weight * 0.453592
+m_height = in_height * 0.0254
+
+BMI_Metric = (kg_weight/m_height**2)
+
+print(f"\nBMI Imperial: {BMI_imperial:.2f}")
+print(f"\nBMI Metric: {BMI_Metric:.2f}")
